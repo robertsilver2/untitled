@@ -5,6 +5,9 @@ class HashMap {
 
 
 public:
+    class Iterator {
+    public:
+            Iterator(std::pair<KeyType, ValueType, )
     HashMap(){
         buckets = new std::pair<KeyTpe, ValueType> [DEFAULT_BUCKET_SIZE]*>
     }
@@ -47,13 +50,13 @@ private:
         return 1;
     }
 
-    size_t quadprobe(key){
+    /*size_t quadprobe(key){
             //boolean test = ((buckets[index]!=null) && (buckets[index]->first !=key) &&  i<size);
             //for(int i=1; test==true; i++) {
             for(size_t i =1; ((buckets[index]!= nullptr]) && (buckets[index]->first != key)) && i<size; i++){
                 index = (hash(key) + (c1 * i) + (c2 * (i ^ 2))) % size;
                 return index;
-            }
+            }*/
     }
 
 
